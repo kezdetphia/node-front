@@ -91,7 +91,7 @@ const LoginPage = () => {
           }
             <div className="flex flex-col mt-5 gap-y-2">
               <button
-                className=" text-white bg-pink-500 border border-black shadow-lg "
+                className=" text-white bg-pink-500  shadow-lg "
                 type="submit"
               >
                 {buttonText}
@@ -103,6 +103,7 @@ const LoginPage = () => {
                   onClick={() => {
                     setButtonText('Register');
                     setIsLogin(!isLogin);
+                    setFormData(blankForm)
                   }}
                 >
                   Register
